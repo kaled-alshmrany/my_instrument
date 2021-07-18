@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build">
+        <df name="CMakeFiles">
+          <df name="3.16.3">
+            <df name="CompilerIdC">
+              <df name="tmp">
+              </df>
+              <in>CMakeCCompilerId.c</in>
+            </df>
+            <df name="CompilerIdCXX">
+              <df name="tmp">
+              </df>
+              <in>CMakeCXXCompilerId.cpp</in>
+            </df>
+          </df>
+          <df name="acc_gen.dir">
+          </df>
+          <df name="clang-tablegen-targets.dir">
+          </df>
+          <df name="CMakeTmp">
+          </df>
+          <df name="FuSeBMC_instrument.dir">
+            <df name="src">
+            </df>
+          </df>
+          <df name="intrinsics_gen.dir">
+          </df>
+          <df name="omp_gen.dir">
+          </df>
+        </df>
+      </df>
+      <df name="CMakeFiles">
+        <df name="3.16.3">
+          <df name="CompilerIdC">
+            <in>CMakeCCompilerId.c</in>
+          </df>
+          <df name="CompilerIdCXX">
+            <in>CMakeCXXCompilerId.cpp</in>
+          </df>
+        </df>
+      </df>
+      <df name="examples">
+        <in>a.c</in>
+      </df>
+      <df name="include">
+        <in>FuSeBMC_inustrment.h</in>
+        <in>GoalCounter.h</in>
+        <in>MyASTConsumer.h</in>
+        <in>MyHolder.h</in>
+        <in>MyOptions.h</in>
+        <in>MyVisitor.h</in>
+        <in>NonDetConsumer.h</in>
+        <in>NonDetVisitor.h</in>
+      </df>
+      <df name="src">
+        <in>FuSeBMC_inustrment.cpp</in>
+        <in>GoalCounter.cpp</in>
+        <in>MyASTConsumer.cpp</in>
+        <in>MyHolder.cpp</in>
+        <in>MyOptions.cpp</in>
+        <in>MyVisitor.cpp</in>
+        <in>NonDetConsumer.cpp</in>
+        <in>NonDetVisitor.cpp</in>
+      </df>
+    </df>
+    <itemPath>notes.txt</itemPath>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+            <option name="gdb_source_dirs" value="src"/>
+            <option name="debug_command"
+                    value="./FuSeBMC_inustrment --input ./examples/relax-1.i --output ./examples/inst.c --show-parse-tree --goal-output-file ./examples/goals.txt --add-else --add-labels --add-label-after-loop --add-goal-at-end-of-func --add-FuSeBMC-func --info-file ./info.xml --compiler-args -I/home/kaled/sv-benchmarks/c/array-examples "/>
+            <option name="debug_dir" value="/home/kaled/sdb1/FuSeBMC_inustrment/"/>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

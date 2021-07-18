@@ -1,0 +1,4 @@
+clang++ -g  -lesbmc -o my_instrument
+/usr/bin/ld: -lesbmc kann nicht gefunden werden
+clang-6.0: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:25: my_instrument] Fehler 1

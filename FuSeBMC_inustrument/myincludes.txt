@@ -1,0 +1,11 @@
+# This is comment.
+#/home/kaled/clang_base/lib/clang/6.0.0/include
+/usr/include
+#/usr/lib/llvm-10/include
+#/usr/include/linux
+#/usr/include/c++/9/tr1
+#/usr/include/c++/9
+./external_include/clang6
+./external_include/cpp9/tr1
+./external_include/cpp9
+./external_include/linux
